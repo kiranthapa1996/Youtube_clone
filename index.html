@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            max-width: 240px;
+        }
+
+        .video-thumbnail {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <button class="text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+            <h1 class="text-2xl font-bold flex items-center">
+                <img src="https://cdn.pixabay.com/photo/2021/06/25/04/20/youtube-6362801_640.png" style="width: 50px; height: auto;" alt="YouTube" class="mr-2">
+                YouTube
+            </h1>
+        </div>
+        <input type="text" placeholder="Search" class="px-4 py-2 border rounded-lg">
+    </header>
+
+    <div class="flex">
+
+        <!-- Sidebar -->
+        <aside class="sidebar bg-white p-4">
+            <ul>
+                <li class="py-2"><a href="#" class="text-gray-700 hover:text-gray-900">Home</a></li>
+                <li class="py-2"><a href="#" class="text-gray-700 hover:text-gray-900">Trending</a></li>
+                <li class="py-2"><a href="#" class="text-gray-700 hover:text-gray-900">Subscriptions</a></li>
+                <li class="py-2"><a href="#" class="text-gray-700 hover:text-gray-900">Library</a></li>
+            </ul>
+        </aside>
+
+        <main class="flex-1 p-4">
+            <div class="overflow-x-auto">
+                <div class="flex flex-wrap -mx-4">
+                    <div class="bg-white rounded-lg shadow-md flex-shrink-0 w-1/4 px-4 mb-4">
+                        <video class="w-full bg-gray-700" controls>
+                            <source src="your-video-file.mp4" type="video/mp4">
+                        </video>
+                        <div class="p-2">
+                            <h2 class="font-bold">Important Announcement | DSA in JavaScript & Python Web Development</h2>
+                            <p class="text-gray-600 text-sm">· 1M views · 1 day ago</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md flex-shrink-0 w-1/4 px-4 mb-4">
+                        <video class="w-full bg-gray-700" controls>
+                            <source src="your-video-file.mp4" type="video/mp4">
+                        </video>
+                        <div class="p-2">
+                            <h2 class="font-bold">GOOGLE Fired its Entire Python Team 😧😧 | How to Survive LAYOFFS?</h2>
+                            <p class="text-gray-600 text-sm">· 500K views · 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md flex-shrink-0 w-1/4 px-4 mb-4">
+                        <video class="w-full bg-gray-700" controls>
+                            <source src="your-video-file.mp4" type="video/mp4">
+                        </video>
+                        <div class="p-2">
+                            <h2 class="font-bold">Why are YOU failing in INTERVIEWS? Listen from the INTERVIEWER</h2>
+                            <p class="text-gray-600 text-sm">· 700K views · 20 days ago</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md flex-shrink-0 w-1/4 px-4 mb-4">
+                        <video class="w-full bg-gray-700" controls>
+                            <source src="your-video-file.mp4" type="video/mp4">
+                        </video>
+                        <div class="p-2">
+                            <h2 class="font-bold">Is your DEGREE worth it? | SCARY TRUTH 🤯🤯</h2>
+                            <p class="text-gray-600 text-sm">· 567k views · 11 days ago</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md flex-shrink-0 w-1/4 px-4 mb-4">
+                        <video class="w-full bg-gray-700" controls>
+                            <source src="your-video-file.mp4" type="video/mp4">
+                        </video>
+                        <div class="p-2">
+                            <h2 class="font-bold">How to Speak English like a Pro in 50 Days | Ansh Mehra</h2>
+                            <p class="text-gray-600 text-sm">· 1M views ·  1 months ago</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md flex-shrink-0 w-1/4 px-4 mb-4">
+                        <video class="w-full bg-gray-700" controls>
+                            <source src="your-video-file.mp4" type="video/mp4">
+                        </video>
+                        <div class="p-2">
+                            <h2 class="font-bold">Mastery: How to Learn Anything Fast | Nishant Kasibhatla</h2>
+                            <p class="text-gray-600 text-sm">· 400K views · 5 days ago</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md flex-shrink-0 w-1/4 px-4 mb-4">
+                        <video class="w-full bg-gray-700" controls>
+                            <source src="your-video-file.mp4" type="video/mp4">
+                        </video>
+                        <div class="p-2">
+                            <h2 class="font-bold"> Views of Mount Everest | Primal Survivor | हिन्दी | Full Episode | S2 - E5 | National Geographic</h2>
+                            <p class="text-gray-600 text-sm">· 545K views · 2 months ago</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md flex-shrink-0 w-1/4 px-4 mb-4">
+                        <video class="w-full bg-gray-700" controls>
+                            <source src="your-video-file.mp4" type="video/mp4">
+                        </video>
+                        <div class="p-2">
+                            <h2 class="font-bold">East African Pilgrimage | Primal Survivor | हिन्दी | Full Episode | S2 - E6 | National Geographic.</h2>
+                            <p class="text-gray-600 text-sm">· 500K views · 2 days ago</p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Repeat the above block for more thumbnails -->
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

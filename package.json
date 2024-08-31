@@ -1,0 +1,16 @@
+{
+  "name": "quizproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^2.2.19",
+    "postcss": "^8.3.11",
+    "autoprefixer": "^10.3.1"
+  }
+}
